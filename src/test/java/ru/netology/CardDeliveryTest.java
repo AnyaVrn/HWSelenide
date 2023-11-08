@@ -23,7 +23,7 @@ public class CardDeliveryTest {
         String planningDate = LocalDate.now().plusDays(5).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $("[data-test-id='date']  input").setValue(planningDate);
         $("[data-test-id = 'name'] input").setValue("Воронина Анна");
-        $("[data-test-id='phone'] input").setValue("+79999999999");
+        $("[data-test-id='phone'] input").setValue("+79999999998");
         $("[data-test-id= 'agreement']").click();
         $(".grid-col button[role='button']").click();
         $("[data-test-id=notification]").shouldHave(Condition.text("Успешно!" +
